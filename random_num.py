@@ -30,4 +30,8 @@ while max(player_scores) < max_score:
         print(f"You rolled a: {value}")
 
         player_scores[player] += value
-        print(f"Your total score is{player_scores[player]}")
+        print(f"Your total score is: {player_scores[player]}")
+
+max_score = max(player_scores)
+winner = player_scores.index(max_score)
+print(f"Player number {winner + 1} is the winner!")
